@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# OS
+.DS_Store
+
+# Large / re-fetchable raw imagery chips (regenerate with casestudy.py / fetch_s2.py)
+artifacts/casestudy/*.npz
+cache/
+data/
+
+# LaTeX build cruft
+report/*.aux
+report/*.log
+report/*.out
+report/*.synctex.gz
+report/t.tex
+report/t.pdf

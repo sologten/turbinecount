@@ -1,0 +1,26 @@
+{
+ "OR_golden_hills_oregon": {
+  "turb_mean": 12.553987068288466,
+  "bg_mean": 2.4699067753904007,
+  "turb_n": 34,
+  "bg_n": 34
+ },
+ "ID_rockland": {
+  "turb_mean": 3.8581236640612286,
+  "bg_mean": 1.3808085342248282,
+  "turb_n": 30,
+  "bg_n": 30
+ },
+ "WY_roundhouse_wind_ii": {
+  "turb_mean": 1.0802100400129955,
+  "bg_mean": 1.7051895678043365,
+  "turb_n": 12,
+  "bg_n": 20
+ },
+ "TX_shamrock_wind_facility_white_mesa_wind_iii": {
+  "turb_mean": 1.577176398701138,
+  "bg_mean": 0.9636414183510674,
+  "turb_n": 45,
+  "bg_n": 45
+ }
+}

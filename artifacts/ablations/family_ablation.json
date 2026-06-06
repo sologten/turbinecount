@@ -1,0 +1,101 @@
+{
+ "alone": {
+  "stat": {
+   "lr": {
+    "label": "stat",
+    "n_features": 6,
+    "test_pooled": 0.9461151289356416,
+    "test_perproj": 0.9359079680733785,
+    "test_ap": 0.9461048277729894,
+    "cv_pooled": 0.9233358482885947,
+    "cv_perproj": 0.9165270153653873
+   },
+   "rf": {
+    "label": "stat",
+    "n_features": 6,
+    "test_pooled": 0.9637354810431733,
+    "test_perproj": 0.9531775907427633,
+    "test_ap": 0.9641419123724959
+   }
+  },
+  "cv131": {
+   "lr": {
+    "label": "cv131",
+    "n_features": 4,
+    "test_pooled": 0.7871071663379355,
+    "test_perproj": 0.7923061563790674,
+    "test_ap": 0.7772748140008816,
+    "cv_pooled": 0.7815363905303938,
+    "cv_perproj": 0.7860749391792003
+   },
+   "rf": {
+    "label": "cv131",
+    "n_features": 4,
+    "test_pooled": 0.8058846519102929,
+    "test_perproj": 0.8039572639682241,
+    "test_ap": 0.8127157181342979
+   }
+  },
+  "plx": {
+   "lr": {
+    "label": "plx",
+    "n_features": 19,
+    "test_pooled": 0.9634027321206808,
+    "test_perproj": 0.9515988272225905,
+    "test_ap": 0.9460713776898984,
+    "cv_pooled": 0.9523448250797736,
+    "cv_perproj": 0.9386645704732913
+   },
+   "rf": {
+    "label": "plx",
+    "n_features": 19,
+    "test_pooled": 0.9628380451457375,
+    "test_perproj": 0.952145256193171,
+    "test_ap": 0.9594402951091537
+   }
+  },
+  "hog": {
+   "lr": {
+    "label": "hog",
+    "n_features": 96,
+    "test_pooled": 0.9340419314778289,
+    "test_perproj": 0.9382634201915152,
+    "test_ap": 0.928074587825617,
+    "cv_pooled": 0.934405954483671,
+    "cv_perproj": 0.9243901942618779
+   },
+   "rf": {
+    "label": "hog",
+    "n_features": 96,
+    "test_pooled": 0.9420439769157719,
+    "test_perproj": 0.9371363393083987,
+    "test_ap": 0.9429072855749897
+   }
+  }
+ },
+ "leave_one_out": {
+  "stat": {
+   "test_perproj": 0.970793589123805,
+   "drop_vs_all": 0.002306480556744872
+  },
+  "cv131": {
+   "test_perproj": 0.9731038304828719,
+   "drop_vs_all": -3.7608023220059295e-06
+  },
+  "plx": {
+   "test_perproj": 0.9604677338105777,
+   "drop_vs_all": 0.012632335869972144
+  },
+  "hog": {
+   "test_perproj": 0.9760647164712467,
+   "drop_vs_all": -0.0029646467906968565
+  }
+ },
+ "all_rf": {
+  "label": "ALL",
+  "n_features": 125,
+  "test_pooled": 0.9840550807217475,
+  "test_perproj": 0.9731000696805499,
+  "test_ap": 0.9864246365261329
+ }
+}

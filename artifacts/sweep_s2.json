@@ -1,0 +1,621 @@
+{
+  "n_train_rows": 8294,
+  "n_train_projects": 138,
+  "subsets": {
+    "plx": [
+      "plx_"
+    ],
+    "static": [
+      "stat_",
+      "cv131_"
+    ],
+    "plx+static": [
+      "plx_",
+      "stat_",
+      "cv131_"
+    ],
+    "ALL": [
+      "stat_",
+      "cv131_",
+      "plx_",
+      "hog_"
+    ]
+  },
+  "selection_metric": "per-project CV AUC (GroupKFold=5)",
+  "results": [
+    {
+      "classifier": "LogisticRegression",
+      "subset": "plx",
+      "subset_prefixes": [
+        "plx_"
+      ],
+      "n_features": 19,
+      "grid": {
+        "C": [
+          0.1,
+          1,
+          10
+        ]
+      },
+      "best_hyperparams": {
+        "C": 10
+      },
+      "pooled_auc": 0.9524572857381685,
+      "perproject_auc": 0.9387664619658715,
+      "fold_mean": 0.9535027002197763,
+      "fold_sd": 0.010203563713644,
+      "n_proj": 138
+    },
+    {
+      "classifier": "LogisticRegression",
+      "subset": "static",
+      "subset_prefixes": [
+        "stat_",
+        "cv131_"
+      ],
+      "n_features": 10,
+      "grid": {
+        "C": [
+          0.1,
+          1,
+          10
+        ]
+      },
+      "best_hyperparams": {
+        "C": 1
+      },
+      "pooled_auc": 0.9426154080987375,
+      "perproject_auc": 0.9305970268138469,
+      "fold_mean": 0.9430171040330768,
+      "fold_sd": 0.014187661743080877,
+      "n_proj": 138
+    },
+    {
+      "classifier": "LogisticRegression",
+      "subset": "plx+static",
+      "subset_prefixes": [
+        "plx_",
+        "stat_",
+        "cv131_"
+      ],
+      "n_features": 29,
+      "grid": {
+        "C": [
+          0.1,
+          1,
+          10
+        ]
+      },
+      "best_hyperparams": {
+        "C": 10
+      },
+      "pooled_auc": 0.9726093169643182,
+      "perproject_auc": 0.9603913269652284,
+      "fold_mean": 0.9735239695742154,
+      "fold_sd": 0.008120907129092409,
+      "n_proj": 138
+    },
+    {
+      "classifier": "LogisticRegression",
+      "subset": "ALL",
+      "subset_prefixes": [
+        "stat_",
+        "cv131_",
+        "plx_",
+        "hog_"
+      ],
+      "n_features": 125,
+      "grid": {
+        "C": [
+          0.1,
+          1,
+          10
+        ]
+      },
+      "best_hyperparams": {
+        "C": 0.1
+      },
+      "pooled_auc": 0.9739736147757255,
+      "perproject_auc": 0.9634597832375853,
+      "fold_mean": 0.9748419291161747,
+      "fold_sd": 0.008530780313839774,
+      "n_proj": 138
+    },
+    {
+      "classifier": "MLP",
+      "subset": "plx",
+      "subset_prefixes": [
+        "plx_"
+      ],
+      "n_features": 19,
+      "grid": {
+        "hidden": [
+          64,
+          128
+        ],
+        "alpha": [
+          0.0001,
+          0.01
+        ]
+      },
+      "best_hyperparams": {
+        "hidden": 128,
+        "alpha": 0.01
+      },
+      "pooled_auc": 0.9556653801144087,
+      "perproject_auc": 0.9457584052036928,
+      "fold_mean": 0.9569540950611721,
+      "fold_sd": 0.01153686906337272,
+      "n_proj": 138
+    },
+    {
+      "classifier": "MLP",
+      "subset": "static",
+      "subset_prefixes": [
+        "stat_",
+        "cv131_"
+      ],
+      "n_features": 10,
+      "grid": {
+        "hidden": [
+          64,
+          128
+        ],
+        "alpha": [
+          0.0001,
+          0.01
+        ]
+      },
+      "best_hyperparams": {
+        "hidden": 128,
+        "alpha": 0.01
+      },
+      "pooled_auc": 0.9581785327489334,
+      "perproject_auc": 0.9459124671003095,
+      "fold_mean": 0.9587139825504479,
+      "fold_sd": 0.010569142917244125,
+      "n_proj": 138
+    },
+    {
+      "classifier": "MLP",
+      "subset": "plx+static",
+      "subset_prefixes": [
+        "plx_",
+        "stat_",
+        "cv131_"
+      ],
+      "n_features": 29,
+      "grid": {
+        "hidden": [
+          64,
+          128
+        ],
+        "alpha": [
+          0.0001,
+          0.01
+        ]
+      },
+      "best_hyperparams": {
+        "hidden": 128,
+        "alpha": 0.0001
+      },
+      "pooled_auc": 0.9757772302056303,
+      "perproject_auc": 0.9619073839772081,
+      "fold_mean": 0.9772151490992416,
+      "fold_sd": 0.0077164984481487104,
+      "n_proj": 138
+    },
+    {
+      "classifier": "MLP",
+      "subset": "ALL",
+      "subset_prefixes": [
+        "stat_",
+        "cv131_",
+        "plx_",
+        "hog_"
+      ],
+      "n_features": 125,
+      "grid": {
+        "hidden": [
+          64,
+          128
+        ],
+        "alpha": [
+          0.0001,
+          0.01
+        ]
+      },
+      "best_hyperparams": {
+        "hidden": 64,
+        "alpha": 0.01
+      },
+      "pooled_auc": 0.9737141237270766,
+      "perproject_auc": 0.961481629341476,
+      "fold_mean": 0.9749203700226555,
+      "fold_sd": 0.008202637389956403,
+      "n_proj": 138
+    },
+    {
+      "classifier": "SVC_rbf",
+      "subset": "plx",
+      "subset_prefixes": [
+        "plx_"
+      ],
+      "n_features": 19,
+      "grid": {
+        "C": [
+          1,
+          10
+        ],
+        "gamma": [
+          "scale",
+          0.01
+        ]
+      },
+      "best_hyperparams": {
+        "C": 10,
+        "gamma": 0.01
+      },
+      "pooled_auc": 0.9540405154931421,
+      "perproject_auc": 0.9447151940550172,
+      "fold_mean": 0.9552513909045084,
+      "fold_sd": 0.010226257669258842,
+      "n_proj": 138
+    },
+    {
+      "classifier": "SVC_rbf",
+      "subset": "static",
+      "subset_prefixes": [
+        "stat_",
+        "cv131_"
+      ],
+      "n_features": 10,
+      "grid": {
+        "C": [
+          1,
+          10
+        ],
+        "gamma": [
+          "scale",
+          0.01
+        ]
+      },
+      "best_hyperparams": {
+        "C": 1,
+        "gamma": 0.01
+      },
+      "pooled_auc": 0.9536563815172594,
+      "perproject_auc": 0.9421873887883638,
+      "fold_mean": 0.9539319875709609,
+      "fold_sd": 0.011304761677094741,
+      "n_proj": 138
+    },
+    {
+      "classifier": "SVC_rbf",
+      "subset": "plx+static",
+      "subset_prefixes": [
+        "plx_",
+        "stat_",
+        "cv131_"
+      ],
+      "n_features": 29,
+      "grid": {
+        "C": [
+          1,
+          10
+        ],
+        "gamma": [
+          "scale",
+          0.01
+        ]
+      },
+      "best_hyperparams": {
+        "C": 1,
+        "gamma": "scale"
+      },
+      "pooled_auc": 0.9764796732011891,
+      "perproject_auc": 0.9633379009885555,
+      "fold_mean": 0.977253603414721,
+      "fold_sd": 0.00761868181252815,
+      "n_proj": 138
+    },
+    {
+      "classifier": "SVC_rbf",
+      "subset": "ALL",
+      "subset_prefixes": [
+        "stat_",
+        "cv131_",
+        "plx_",
+        "hog_"
+      ],
+      "n_features": 125,
+      "grid": {
+        "C": [
+          1,
+          10
+        ],
+        "gamma": [
+          "scale",
+          0.01
+        ]
+      },
+      "best_hyperparams": {
+        "C": 10,
+        "gamma": 0.01
+      },
+      "pooled_auc": 0.977509903544924,
+      "perproject_auc": 0.966016418914726,
+      "fold_mean": 0.9779583410708964,
+      "fold_sd": 0.006554661892631595,
+      "n_proj": 138
+    },
+    {
+      "classifier": "RandomForest",
+      "subset": "static",
+      "subset_prefixes": [
+        "stat_",
+        "cv131_"
+      ],
+      "n_features": 10,
+      "grid": {
+        "n_estimators": [
+          200,
+          400
+        ],
+        "max_depth": [
+          null,
+          16
+        ]
+      },
+      "best_hyperparams": {
+        "n_estimators": 400,
+        "max_depth": null
+      },
+      "pooled_auc": 0.9581227385391454,
+      "perproject_auc": 0.9481322054398603,
+      "fold_mean": 0.9586614346582383,
+      "fold_sd": 0.010338771221399506,
+      "n_proj": 138
+    },
+    {
+      "classifier": "RandomForest",
+      "subset": "plx",
+      "subset_prefixes": [
+        "plx_"
+      ],
+      "n_features": 19,
+      "grid": {
+        "n_estimators": [
+          200,
+          400
+        ],
+        "max_depth": [
+          null,
+          16
+        ]
+      },
+      "best_hyperparams": {
+        "n_estimators": 200,
+        "max_depth": 16
+      },
+      "pooled_auc": 0.9601343538527516,
+      "perproject_auc": 0.9460656661627339,
+      "fold_mean": 0.9612189302542516,
+      "fold_sd": 0.011069044760323148,
+      "n_proj": 138
+    },
+    {
+      "classifier": "RandomForest",
+      "subset": "plx+static",
+      "subset_prefixes": [
+        "plx_",
+        "stat_",
+        "cv131_"
+      ],
+      "n_features": 29,
+      "grid": {
+        "n_estimators": [
+          200,
+          400
+        ],
+        "max_depth": [
+          null,
+          16
+        ]
+      },
+      "best_hyperparams": {
+        "n_estimators": 200,
+        "max_depth": null
+      },
+      "pooled_auc": 0.978678238368332,
+      "perproject_auc": 0.9672997409488693,
+      "fold_mean": 0.979615905321418,
+      "fold_sd": 0.00728260651805062,
+      "n_proj": 138
+    },
+    {
+      "classifier": "RandomForest",
+      "subset": "ALL",
+      "subset_prefixes": [
+        "stat_",
+        "cv131_",
+        "plx_",
+        "hog_"
+      ],
+      "n_features": 125,
+      "grid": {
+        "n_estimators": [
+          200,
+          400
+        ],
+        "max_depth": [
+          null,
+          16
+        ]
+      },
+      "best_hyperparams": {
+        "n_estimators": 400,
+        "max_depth": 16
+      },
+      "pooled_auc": 0.9762948167208183,
+      "perproject_auc": 0.9629537825133154,
+      "fold_mean": 0.9769717095701891,
+      "fold_sd": 0.0071394169878959916,
+      "n_proj": 138
+    },
+    {
+      "classifier": "XGBoost",
+      "subset": "plx",
+      "subset_prefixes": [
+        "plx_"
+      ],
+      "n_features": 19,
+      "grid": {
+        "n_estimators": [
+          200,
+          400
+        ],
+        "max_depth": [
+          4,
+          6
+        ],
+        "learning_rate": [
+          0.05,
+          0.1
+        ]
+      },
+      "best_hyperparams": {
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.1
+      },
+      "pooled_auc": 0.9577374997274253,
+      "perproject_auc": 0.947965275179431,
+      "fold_mean": 0.9590149162283964,
+      "fold_sd": 0.011616987594470588,
+      "n_proj": 138
+    },
+    {
+      "classifier": "XGBoost",
+      "subset": "static",
+      "subset_prefixes": [
+        "stat_",
+        "cv131_"
+      ],
+      "n_features": 10,
+      "grid": {
+        "n_estimators": [
+          200,
+          400
+        ],
+        "max_depth": [
+          4,
+          6
+        ],
+        "learning_rate": [
+          0.05,
+          0.1
+        ]
+      },
+      "best_hyperparams": {
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.1
+      },
+      "pooled_auc": 0.9596414516961412,
+      "perproject_auc": 0.9477106194678608,
+      "fold_mean": 0.9602490871337857,
+      "fold_sd": 0.010862471173051618,
+      "n_proj": 138
+    },
+    {
+      "classifier": "XGBoost",
+      "subset": "plx+static",
+      "subset_prefixes": [
+        "plx_",
+        "stat_",
+        "cv131_"
+      ],
+      "n_features": 29,
+      "grid": {
+        "n_estimators": [
+          200,
+          400
+        ],
+        "max_depth": [
+          4,
+          6
+        ],
+        "learning_rate": [
+          0.05,
+          0.1
+        ]
+      },
+      "best_hyperparams": {
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.1
+      },
+      "pooled_auc": 0.9793801870952268,
+      "perproject_auc": 0.9634335063989197,
+      "fold_mean": 0.9803578160825388,
+      "fold_sd": 0.007646877218119758,
+      "n_proj": 138
+    },
+    {
+      "classifier": "XGBoost",
+      "subset": "ALL",
+      "subset_prefixes": [
+        "stat_",
+        "cv131_",
+        "plx_",
+        "hog_"
+      ],
+      "n_features": 125,
+      "grid": {
+        "n_estimators": [
+          200,
+          400
+        ],
+        "max_depth": [
+          4,
+          6
+        ],
+        "learning_rate": [
+          0.05,
+          0.1
+        ]
+      },
+      "best_hyperparams": {
+        "n_estimators": 400,
+        "max_depth": 6,
+        "learning_rate": 0.05
+      },
+      "pooled_auc": 0.9803938158267734,
+      "perproject_auc": 0.9662463123021027,
+      "fold_mean": 0.9814734219470855,
+      "fold_sd": 0.006938456424624474,
+      "n_proj": 138
+    }
+  ],
+  "best": {
+    "classifier": "RandomForest",
+    "subset": "plx+static",
+    "subset_prefixes": [
+      "plx_",
+      "stat_",
+      "cv131_"
+    ],
+    "best_hyperparams": {
+      "n_estimators": 200,
+      "max_depth": null
+    },
+    "metrics": {
+      "pooled_auc": 0.978678238368332,
+      "perproject_auc": 0.9672997409488693,
+      "fold_mean": 0.979615905321418,
+      "fold_sd": 0.00728260651805062,
+      "n_proj": 138
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+ "cv131": {
+  "name": "CS131 primitives (old fallback)",
+  "pooled": 0.7871071663379355,
+  "per_proj": 0.7923061563790674,
+  "ap": 0.7772748140008816
+ },
+ "static": {
+  "name": "Static salience (stat+cv131)",
+  "pooled": 0.9563949156256849,
+  "per_proj": 0.9481262133579466,
+  "ap": 0.9535697118805103
+ },
+ "hog": {
+  "name": "HOG + linear SVM (literature)",
+  "pooled": 0.9334655562860691,
+  "per_proj": 0.9376522062649117,
+  "ap": 0.9277586045646102
+ },
+ "plx": {
+  "name": "Parallax/motion only (novel)",
+  "pooled": 0.9634020016071299,
+  "per_proj": 0.9515988272225905,
+  "ap": 0.946070489851792
+ },
+ "headline": {
+  "name": "RF plx+static (frozen best)",
+  "pooled": 0.9835623493315802,
+  "per_proj": 0.9714412502190394,
+  "ap": 0.9854123734502631
+ },
+ "headline_ci": [
+  0.927732058500291,
+  0.9953800046437958
+ ],
+ "naip": {
+  "pooled": 0.9903846153846153,
+  "per_proj": 1.0,
+  "n_proj": 10,
+  "cv_per_proj": 0.9443204365079366
+ }
+}
