@@ -1,8 +1,8 @@
 # TurbineCount
 
-**What actually works at 10 m? An honest study of static, texture, and blade-motion cues for wind-turbine detection in Sentinel-2.**
+**A study of static, texture, and blade-motion cues for wind-turbine detection in Sentinel-2.**
 
-TurbineCount asks a narrow, practical question: at Sentinel-2's 10 m ground sample distance, which computer-vision cues actually separate operating wind turbines from background, and which only appear to? We compare four cue families head to head on a clean, leakage-free, project-grouped benchmark, and we introduce a novel **band-parallax (blade-motion)** cue that reads the faint multi-band fringe a *spinning* blade leaves in Sentinel-2 imagery.
+Our researcj question: at Sentinel-2's 10 m ground sample distance, which computer-vision cues actually separate operating wind turbines from background, and which only appear to? We compare four cue families head to head on a clean, leakage-free, project-grouped benchmark, and we introduce a novel **band-parallax (blade-motion)** cue that reads the faint multi-band fringe a *spinning* blade leaves in Sentinel-2 imagery.
 
 The honest one-line takeaway: this is not a turbine detector, it is a **turbine-rotation detector**. It measures whether a turbine was spinning at the instant of capture, which is a proxy for whether it was generating.
 
@@ -78,7 +78,7 @@ python fig_ablations.py       # ablation summary figure
 
 The data-collection scripts (`select_panel.py`, `fetch_s2.py`, `fetch_naip.py`, `build_matrix.py`, `sweep_s2.py`, `detect.py`) were run in the original environment and need network access plus a local USWTDB dump. Point `TC_WORK` at a directory holding `cache/uswtdb/all_onshore.json` to re-run them; the cached outputs in `artifacts/` let you skip this for everything above.
 
-## Honest limitations
+## Limitations
 
 - This is candidate-point classification, not a deployed counter; the real detection number is F1 0.39.
 - The parallax cue fires only on spinning turbines, so recall against installed-turbine ground truth has a hard ceiling.
